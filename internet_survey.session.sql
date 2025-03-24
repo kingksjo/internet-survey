@@ -1,4 +1,4 @@
 
 -- @block
-SELECT * FROM survey_responses LIMIT 20;
+SELECT gender, residence FROM survey_responses WHERE residence = "Agric Quarters";
 
