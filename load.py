@@ -46,7 +46,7 @@ cursor.execute(create_table_query)
 transformed_csv_path = os.path.expanduser("transformed_survey_data.csv")
 data = pd.read_csv(transformed_csv_path)
 
-data.to_sql(table_name, conn, if_exists="append", index=False)
+data.to_sql(table_name, conn, if_exists="replace", index=False)
 
 conn.commit()
 conn.close()

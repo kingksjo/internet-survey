@@ -11,9 +11,9 @@ data.columns = data.columns.str.lower()
 if "timestamp" in data.columns:
     data["timestamp"] = pd.to_datetime(data["timestamp"], errors="coerce")
 
-for i in data.columns:
-    if i.__contains__("planning on switching"):
-        data[i] = data[i].map({"Yes" : 1, "No" : 0, "Maybe" : 0.5})
+# for i in data.columns:
+#     if i.__contains__("planning on switching"):
+#         data[i] = data[i].map({"Yes" : 1, "No" : 0, "Maybe" : 0.5})
 
 for j in data.columns:
     if j.__contains__("experience"):
