@@ -7,5 +7,12 @@
             "name": "internet_survey",
             "database": "survey_data.db"
         }
-    ]
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "python": true
+    }
 }
